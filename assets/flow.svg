@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" width="1280" height="300" role="img" aria-label="How a PROBE job flows: sponsor funds, operator runs, verifier reproduces, contract pays">
+<defs><style>
+.flow{stroke-dasharray:4 8;animation:f 1.2s linear infinite}@keyframes f{to{stroke-dashoffset:-12}}
+.lit{animation:l 6s infinite}@keyframes l{0%,100%{opacity:.25}10%,22%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.flow,.lit{animation:none}}
+</style><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#edebe4" opacity=".06"/></pattern></defs>
+<rect width="1280" height="300" rx="18" fill="#141413"/><rect width="1280" height="300" rx="18" fill="url(#dots)"/>
+<rect x="32" y="34" width="278" height="232" rx="12" fill="#1b1b19" stroke="#2b2b28" stroke-opacity="1"/>
+<rect class="lit" style="animation-delay:0.0s" x="32" y="34" width="278" height="3" rx="1.5" fill="#e83f28"/>
+<text x="56" y="78" fill="#e83f28" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">01</text>
+<text x="88" y="78" fill="#9a978e" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">sponsor</text>
+<text x="56" y="126" fill="#f7f6f2" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="27" letter-spacing="-.8">Funds the job</text>
+<rect x="56" y="146" width="110" height="28" rx="6" fill="#141413" stroke="#2b2b28"/>
+<text x="66" y="165" fill="#edebe4" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13.5">createJob()</text>
+<text x="56" y="208" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">Budget locked in escrow. Rules</text>
+<text x="56" y="229" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">and snapshot pinned.</text>
+<path class="flow" d="M312 150.0 H340" stroke="#e83f28" stroke-width="2"/>
+<path d="M334 145.0 L340 150.0 L334 155.0" stroke="#e83f28" stroke-width="2" fill="none"/>
+<rect x="342" y="34" width="278" height="232" rx="12" fill="#1b1b19" stroke="#2b2b28" stroke-opacity="1"/>
+<rect class="lit" style="animation-delay:1.5s" x="342" y="34" width="278" height="3" rx="1.5" fill="#e83f28"/>
+<text x="366" y="78" fill="#e83f28" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">02</text>
+<text x="398" y="78" fill="#9a978e" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">operator</text>
+<text x="366" y="126" fill="#f7f6f2" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="27" letter-spacing="-.8">Runs the CLI</text>
+<rect x="366" y="146" width="151" height="28" rx="6" fill="#141413" stroke="#2b2b28"/>
+<text x="376" y="165" fill="#edebe4" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13.5">probe work &lt;job&gt;</text>
+<text x="366" y="208" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">An agent proposes cases. A</text>
+<text x="366" y="229" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">local runner executes them.</text>
+<path class="flow" d="M622 150.0 H650" stroke="#e83f28" stroke-width="2"/>
+<path d="M644 145.0 L650 150.0 L644 155.0" stroke="#e83f28" stroke-width="2" fill="none"/>
+<rect x="652" y="34" width="278" height="232" rx="12" fill="#1b1b19" stroke="#2b2b28" stroke-opacity="1"/>
+<rect class="lit" style="animation-delay:3.0s" x="652" y="34" width="278" height="3" rx="1.5" fill="#e83f28"/>
+<text x="676" y="78" fill="#e83f28" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">03</text>
+<text x="708" y="78" fill="#9a978e" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">verifier</text>
+<text x="676" y="126" fill="#f7f6f2" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="27" letter-spacing="-.8">Reproduces it</text>
+<rect x="676" y="146" width="94" height="28" rx="6" fill="#141413" stroke="#2b2b28"/>
+<text x="686" y="165" fill="#edebe4" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13.5">replay ×2</text>
+<text x="676" y="208" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">Same snapshot, deterministic.</text>
+<text x="676" y="229" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">New path or nothing.</text>
+<path class="flow" d="M932 150.0 H960" stroke="#e83f28" stroke-width="2"/>
+<path d="M954 145.0 L960 150.0 L954 155.0" stroke="#e83f28" stroke-width="2" fill="none"/>
+<rect x="962" y="34" width="278" height="232" rx="12" fill="#1b1b19" stroke="#e83f28" stroke-opacity="1"/>
+<rect class="lit" style="animation-delay:4.5s" x="962" y="34" width="278" height="3" rx="1.5" fill="#e83f28"/>
+<text x="986" y="78" fill="#e83f28" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">04</text>
+<text x="1018" y="78" fill="#9a978e" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13">contract</text>
+<text x="986" y="126" fill="#f7f6f2" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="700" font-size="27" letter-spacing="-.8">Pays once</text>
+<rect x="986" y="146" width="151" height="28" rx="6" fill="#141413" stroke="#2b2b28"/>
+<text x="996" y="165" fill="#edebe4" font-family="ui-monospace,'SF Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="13.5">recordAccepted()</text>
+<text x="986" y="208" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">Reward credited per new path.</text>
+<text x="986" y="229" fill="#9a978e" font-family="'Inter','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15">Withdraw any time.</text>
+</svg>
